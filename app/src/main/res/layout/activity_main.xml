@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edit_text_1"
+        android:layout_width="94dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="37dp"
+        android:hint="" />
+
+    <EditText
+        android:id="@+id/edit_text_2"
+        android:layout_width="94dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="100dp"
+        android:layout_toEndOf="@+id/edit_text_1"
+        android:hint="" />
+
+    <Button
+        android:id="@+id/button_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_text_1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="170dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="20dp"
+        android:text="Add" />
+
+    <Button
+        android:id="@+id/button_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_text_2"
+        android:layout_marginStart="-102dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_toEndOf="@+id/button_1"
+        android:text="Subtract" />
+
+</RelativeLayout>
