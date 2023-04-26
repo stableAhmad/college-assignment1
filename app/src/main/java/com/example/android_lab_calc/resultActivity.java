@@ -8,16 +8,22 @@ import android.widget.TextView;
 
 public class resultActivity extends AppCompatActivity {
     private TextView output;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
+        setTitle("Result");
         Intent intent = getIntent();
-        int res = intent.getIntExtra(MainActivity.EXTRA_NUMBER, 0);
+        String result = intent.getStringExtra("Result");
+        String error = intent.getStringExtra("Error");
         output = (TextView) findViewById(R.id.result);
-        System.out.println("rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr");
-        System.out.println(res);
-        output.setText(res+"");
+        if (error != null)
+            output.setText(error);
+        else
+            output.setText(result);
+
+        System.out.println(result);
 
     }
 }

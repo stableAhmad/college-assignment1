@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Android-lab-calc</string>
+    <string name="first_number">First Number</string>
+    <string name="second_number">Second Number</string>
+    <string name="add">Add</string>
+    <string name="subtract">Subtract</string>
 </resources>
