@@ -8,9 +8,24 @@
 
     <TextView
         android:id="@+id/result"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textStyle="bold"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.178"
+        app:layout_constraintStart_toEndOf="@+id/dummy"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dummy"
         android:layout_width="153dp"
         android:layout_height="38dp"
-        android:text="The result is"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:text="The result is : "
         android:textSize="25dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
